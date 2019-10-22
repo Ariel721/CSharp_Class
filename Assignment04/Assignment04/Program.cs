@@ -1,4 +1,5 @@
-﻿//This program calculates the factorial of a small integer 
+﻿//Assignment #4 Ariel Garcia
+//This program calculates the factorial of a small integer 
 //entered by the user
 
 using System;
@@ -29,3 +30,4 @@ namespace Assignment04
         }
     }
 }
+// End of Assignment #4 Ariel Garcia
