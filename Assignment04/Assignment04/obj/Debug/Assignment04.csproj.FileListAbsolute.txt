@@ -1,0 +1,7 @@
+C:\Users\ariel\Documents\Git_test\CSharp_Class\Assignment04\Assignment04\bin\Debug\Assignment04.exe.config
+C:\Users\ariel\Documents\Git_test\CSharp_Class\Assignment04\Assignment04\bin\Debug\Assignment04.exe
+C:\Users\ariel\Documents\Git_test\CSharp_Class\Assignment04\Assignment04\bin\Debug\Assignment04.pdb
+C:\Users\ariel\Documents\Git_test\CSharp_Class\Assignment04\Assignment04\obj\Debug\Assignment04.csprojAssemblyReference.cache
+C:\Users\ariel\Documents\Git_test\CSharp_Class\Assignment04\Assignment04\obj\Debug\Assignment04.csproj.CoreCompileInputs.cache
+C:\Users\ariel\Documents\Git_test\CSharp_Class\Assignment04\Assignment04\obj\Debug\Assignment04.exe
+C:\Users\ariel\Documents\Git_test\CSharp_Class\Assignment04\Assignment04\obj\Debug\Assignment04.pdb
