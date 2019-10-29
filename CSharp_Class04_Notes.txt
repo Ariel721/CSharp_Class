@@ -1,0 +1,131 @@
+// Write a program that calculates the average of numbers given by the user.
+
+using System;
+
+class Average
+{
+    static void Main()
+    {
+        float Sum=0.0f;// define a float for sum
+        float Average;// define a float for average
+
+
+        // sequentially add the numbers up from 0 to 10
+
+        for (int x=1;x<=10;x++) 
+        {
+            Console.Write("Please Enter number {0} of 10: ", x); //ask the user to enter a number
+            String NumSt = Console.ReadLine();//capture entry by user
+            float NumInt = float.Parse(NumSt);
+
+
+            Sum = Sum + NumInt;//add the given number to the previous
+
+        }
+
+        // finding the average
+        Average = Sum / 10;
+        Console.WriteLine("The average of the given numbers is {0}", Average);
+        Console.ReadLine();
+    }
+
+}
+//For Loop find
+using System;
+
+class Labwork
+{
+    static void Main()
+    {
+        while (true)
+        {
+            int[] numbers = new int[] { 10, 15, 20, 25, 30, 35 };
+
+            Console.Write("Enter a number:");
+            string str = Console.ReadLine();
+
+            int Numb = int.Parse(str); // TODO: convert input string into a number
+
+
+            bool found = false; // TODO: set a boolean flag named "found"
+
+
+            // use for to look for the number
+            for (int x = 0; x <= 5; ++x)
+            {
+                if (Numb == numbers[x])
+                {
+                    found = true; // TODO: if number is found set found flag to true and exit the loop
+                    break;
+                }
+
+
+            }
+
+            if (found) // if true, i.e. found the number, say Found the Number
+            {
+                Console.WriteLine("Found the number!");
+            }
+            else // if not true, did not find it, say Did not Find the Number
+            {
+                Console.WriteLine("Sorry, did not find the number");
+            }
+
+            Console.ReadLine(); // Pause to see the results
+        }
+    }
+}
+//For each
+// Create an array of numbers and find the max and min values of your array
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+
+        // start with the given array
+        int[] numbers = new int[] { 0, 2, 5, 100, -1, 4, 8, -5 };
+
+
+        int Max = numbers[0]; // define and set the max and min
+        int Min = numbers[0]; 
+
+        foreach (int x in numbers)
+        {
+            if (Max <= x)
+            {
+                Max = x;// code to find the max
+            }
+            if (Min >= x)
+               {
+                Min = x;// code to find the min
+            }
+        }
+
+        Console.WriteLine("The Minimum value is {0}", Min);
+        Console.WriteLine("The Maximum value is {0}", Max);
+
+        Console.ReadLine();
+    }
+}
+Lab Variables vs. Object types Q&A 
+
+1. c
+2. d
+3. float dx = (float) (double)objdblx  // (double) not necessary
+4. double dx = (double) objdblx
+5. double.Parse(strx)
+6.
+7.dblx.ToString(strx)
+8. Base
+9. Entity with attributes and funcionality
+10. object Name
+
+extra question in class
+double dx = double.Parse((string)objstrx)
+
+double dx = double.Parse(objstrx.ToString())
+
+
