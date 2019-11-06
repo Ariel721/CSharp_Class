@@ -1,0 +1,179 @@
+using System;
+
+class Contact // TODO: Define the Contact class to make this compile
+{
+    public string FirstName;
+    public string LastName;
+    public int Age;
+
+    public string GetFullName ()
+    {
+        return FirstName + " " + LastName;
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Contact contact = new Contact();
+
+        contact.FirstName = "Ariel";
+        contact.LastName = "Dante";
+        contact.Age = 23;
+
+        // GetFullName() returns "FirstName LastName"
+        Console.WriteLine("Name: {0} Age: {1}", contact.GetFullName(), contact.Age);
+        Console.ReadLine();
+
+    }
+}
+        /*int TressInBack = 7;
+        int TreesInFront = 6 * TressInBack;
+        Console.WriteLine("Robert Planted {0} Trees in Front of the School", TreesInFront);
+        Console.ReadLine();*/
+
+using System;
+
+class BankAccount
+{
+    // create the balance field
+    private double balance;
+
+    //create a constructor
+    public BankAccount()
+    {
+        balance = 0;  // start with a zero balance
+    }
+
+    //create the deposit function
+    public void Deposit(double amountd)
+    {
+        balance += amountd;
+    }
+
+    // create the withdrawal function
+    public void Withdrawal(double amountw)
+    {
+        balance -= amountw;
+    }
+
+    //create an accessing function to find what your current balance is
+    public double GetBalance() // returns the balance in decimal
+    {
+        return balance;
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        BankAccount acct = new BankAccount();
+
+        acct.Deposit(200);
+        acct.Withdrawal(40);
+
+        Console.WriteLine("The final balance is {0:c}", acct.GetBalance());
+
+        Console.ReadLine();
+    }
+<<<<<<<<<<<<<<<<<<<<<<<< NOT COMPLETE>>>>>>>>>>>>>>>>>>>>>>>>>> EXAMPLE FOR 
+}
+using System;
+
+public struct Pet
+{
+    public string Name;
+    public string TypeOfPet;
+}
+
+class Program
+{
+    static void Main()
+    {
+        var numberOfPets = 0;
+        var pets = new Pet[10];
+
+        while (true)
+        {
+            Console.Write("A)dd D)elete L)ist pets:");
+            var choice = Console.ReadLine();
+
+            switch (choice)
+            {
+                case "A":
+                case "a":
+                    {
+                        Console.Write("Name :");
+                        var name = Console.ReadLine();
+
+                        Console.Write("Type of pet :");
+                        var typeOfPet = Console.ReadLine();
+                        int EndofArrInd = 9;
+                        bool ExitL = false;
+                        while (ExitL=Fa)
+                            if (pets[EndofArrInd].Name==null )
+                        pets[EndofArrInd].Name = name; // TODO: Always add the pet at the end of the array
+                        pets[EndofArrInd].TypeOfPet = typeOfPet; 
+
+                        numberOfPets++;
+                        break;
+                    }
+
+                case "D":
+                case "d":
+                    {
+                        if (numberOfPets == 0)
+                        {
+                            Console.WriteLine("No pets");
+                            break;
+                        }
+
+                        for (var index = 0; index < numberOfPets; index++)
+                        {
+                            Console.WriteLine("{0}. {1,-10} {2}", index + 1, pets[index].Name, pets[index].TypeOfPet);
+                        }
+
+                        Console.Write("Which pet to remove (1-{0})", numberOfPets);
+
+                        var petNumberToDelete = Console.ReadLine();
+                        var indexToDelete = int.Parse(petNumberToDelete);
+
+                        // Squish the array from index to the end
+
+                        for (var index = indexToDelete - 1; index < numberOfPets; index++)
+                        {
+                            // TODO: Just copy the pet from the next index into the current index
+                        }
+
+                        // We have one less pet
+                        numberOfPets--;
+
+                        break;
+                    }
+
+                case "L":
+                case "l":
+                    {
+                        if (numberOfPets == 0)
+                        {
+                            Console.WriteLine("No pets");
+                        }
+
+                        for (int index = 0; index < numberOfPets; index++)
+                        {
+                            Console.WriteLine("{0}. {1,-10} {2}", index + 1, pets[index].Name, pets[index].TypeOfPet);
+                        }
+
+                        break;
+                    }
+                default:
+                    {
+                        Console.WriteLine("Invalid option [{0}]", choice);
+                        break;
+                    }
+            }
+        }
+    }
+}
