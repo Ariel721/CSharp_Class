@@ -78,8 +78,10 @@ class Program
 
         Console.ReadLine();
     }
-<<<<<<<<<<<<<<<<<<<<<<<< NOT COMPLETE>>>>>>>>>>>>>>>>>>>>>>>>>> EXAMPLE FOR 
 }
+
+<<<<<<<<<<<<<<<<<<<<<<<< COMPLETED>>>>>>>>>>>>>>>>>>>>>>>>>>  
+
 using System;
 
 public struct Pet
@@ -110,13 +112,10 @@ class Program
 
                         Console.Write("Type of pet :");
                         var typeOfPet = Console.ReadLine();
-                        int EndofArrInd = 9;
-                        bool ExitL = false;
-                        while (ExitL=Fa)
-                            if (pets[EndofArrInd].Name==null )
-                        pets[EndofArrInd].Name = name; // TODO: Always add the pet at the end of the array
-                        pets[EndofArrInd].TypeOfPet = typeOfPet; 
-
+                        // TODO: Always add the pet at the end of the array ASK ASK ASK
+                         int ArrInd = numberOfPets;
+                        pets[ArrInd].Name = name; 
+                        pets[ArrInd].TypeOfPet = typeOfPet;
                         numberOfPets++;
                         break;
                     }
@@ -141,14 +140,21 @@ class Program
                         var indexToDelete = int.Parse(petNumberToDelete);
 
                         // Squish the array from index to the end
-
-                        for (var index = indexToDelete - 1; index < numberOfPets; index++)
+                        if (indexToDelete <= numberOfPets)
                         {
-                            // TODO: Just copy the pet from the next index into the current index
+                            for (var index = indexToDelete - 1; index < numberOfPets - 1; index++)
+                            {
+                                pets[index].Name = pets[index + 1].Name;
+                                pets[index].TypeOfPet = pets[index + 1].TypeOfPet;// TODO: Just copy the pet from the next index into the current index
+                            }
+                            
+                            numberOfPets--;
                         }
-
+                        else
+                            Console.WriteLine("Invalid entry. Unable to delete. Press any keay to start over");
+                            break;
                         // We have one less pet
-                        numberOfPets--;
+                        
 
                         break;
                     }

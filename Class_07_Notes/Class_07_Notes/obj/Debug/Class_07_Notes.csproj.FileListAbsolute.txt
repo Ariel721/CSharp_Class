@@ -1,0 +1,7 @@
+C:\Mysource\CSharp_Class\Class_07_Notes\Class_07_Notes\bin\Debug\Class_07_Notes.exe.config
+C:\Mysource\CSharp_Class\Class_07_Notes\Class_07_Notes\bin\Debug\Class_07_Notes.exe
+C:\Mysource\CSharp_Class\Class_07_Notes\Class_07_Notes\bin\Debug\Class_07_Notes.pdb
+C:\Mysource\CSharp_Class\Class_07_Notes\Class_07_Notes\obj\Debug\Class_07_Notes.csprojAssemblyReference.cache
+C:\Mysource\CSharp_Class\Class_07_Notes\Class_07_Notes\obj\Debug\Class_07_Notes.csproj.CoreCompileInputs.cache
+C:\Mysource\CSharp_Class\Class_07_Notes\Class_07_Notes\obj\Debug\Class_07_Notes.exe
+C:\Mysource\CSharp_Class\Class_07_Notes\Class_07_Notes\obj\Debug\Class_07_Notes.pdb
