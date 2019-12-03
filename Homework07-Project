@@ -52,8 +52,8 @@ class Program
                             if (items[x].ItemNumber == changeItemNumber)
                             {
                                 fFound = true;
-                                // code to show what has to happen if the item in the 
-                                list is found
+                                // code to show what has to happen if the item in the list is found
+
                                 // reset the count to show a new count for your list 
                                 // (Note: your list is now increased by one item)
                             }
@@ -125,4 +125,4 @@ class Program
         }
     }
 }
-}
+
