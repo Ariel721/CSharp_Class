@@ -29,10 +29,9 @@ class Program
         while (quiter) // use a never ending loop that shows the user what options they can select
         {
             Console.WriteLine("Inventory"); // as long as no one Quits, continue the inventory update
-            Console.Write("Please select and option: L)ist A)dd C)hange D)elete"); // in that loop, show what user can select from the list
-            // read the user's input and then create what case it falls
-            string strx = Console.ReadLine(); // read user's input    
-            optx = int.Parse(strx); // convert the given string to integer to match our case types shown below
+            Console.Write("Please select and option: 1)Add Item 2)Change Item 3)Delete Item 4)List Items"); // in that loop, show what user can select from the list
+            string strx = Console.ReadLine(); // read the user's input and then create what case it falls  
+            int optx = int.Parse(strx); // convert the given string to integer to match our case types shown below
 
             Console.WriteLine(); // provide an extra blank line on screen
             switch (optx)
@@ -85,7 +84,7 @@ class Program
                         {
                             Console.WriteLine("Item deleted");
                         }
-                    else // if did not find it, hint the user that you did not find it in your list
+                        else // if did not find it, hint the user that you did not find it in your list
 
                         {
                             Console.WriteLine("Item {0} not found", deleteItemNumber);
@@ -125,4 +124,3 @@ class Program
         }
     }
 }
-
